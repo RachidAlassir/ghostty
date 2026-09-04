@@ -536,6 +536,7 @@ pub fn add(
     })) |dep| {
         step.root_module.addImport("z2d", dep.module("z2d"));
     }
+    self.addItijah(b, step.root_module, target, optimize);
     if (b.lazyDependency("zf", .{
         .target = target,
         .optimize = optimize,
@@ -1122,6 +1123,22 @@ pub fn gtkNgDistResources(
     };
 }
 
+pub fn addItijah(
+    self: *const SharedDeps,
+    b: *std.Build,
+    module: *std.Build.Module,
+    target: std.Build.ResolvedTarget,
+    optimize: std.builtin.OptimizeMode,
+) void {
+    const itijah_dep = b.lazyDependency("itijah", .{
+        .target = target,
+        .optimize = optimize,
+        .shared_uucode = true,
+    }) orelse return;
+    const itijah_mod = itijah_dep.module("itijah");
+    itijah_mod.addImport("uucode", self.uucode_mod);
+    module.addImport("itijah", itijah_mod);
+}
 // For dynamic linking, we prefer dynamic linking and to search by
 // mode first. Mode first will search all paths for a dynamic library
 // before falling back to static.

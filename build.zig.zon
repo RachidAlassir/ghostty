@@ -51,6 +51,12 @@
             .url = "https://deps.files.ghostty.org/uucode-2826a37a4562284fdacd8fa029d49509cc9bffcd.tar.gz",
             .hash = "uucode-0.2.0-ZZjBPlK5VADj7fdoq7G8LIHzD5o6FSkcBXXrRWr4jnrA",
         },
+        .itijah = .{
+            // manaflow-ai/itijah: Zig 0.16 compatibility on top of v0.2.1
+            .url = "https://github.com/manaflow-ai/itijah/archive/e1482b2bbd9828ccd15366afa051cbc99d9a9e45.tar.gz",
+            .hash = "itijah-0.2.1-keFZYUG4AwCgqQS-ye0z3PLRgaoSyfKt3kvJW9vgObKu",
+            .lazy = true,
+        },
         .zig_wayland = .{
             // codeberg ifreund/zig-wayland
             .url = "https://deps.files.ghostty.org/wayland-0.6.0-lQa1kqz8AQADQmdNJsNhLoNHcnEGEUjrOaPV-dtEnEmX.tar.gz",
