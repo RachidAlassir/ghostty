@@ -67,6 +67,12 @@
   },
   {
     "type": "archive",
+    "url": "https://github.com/manaflow-ai/itijah/archive/e1482b2bbd9828ccd15366afa051cbc99d9a9e45.tar.gz",
+    "dest": "vendor/p/itijah-0.2.1-keFZYUG4AwCgqQS-ye0z3PLRgaoSyfKt3kvJW9vgObKu",
+    "sha256": "7d996f56248375e819d035b9b9a7712b44b4c94138ecdf3b8127dee438a0fbbc"
+  },
+  {
+    "type": "archive",
     "url": "https://deps.files.ghostty.org/N-V-__8AAEbOfQBnvcFcCX2W5z7tDaN8vaNZGamEQtNOe0UI.tar.gz",
     "dest": "vendor/p/N-V-__8AAEbOfQBnvcFcCX2W5z7tDaN8vaNZGamEQtNOe0UI",
     "sha256": "c816c20e8c75f3e15ae867350e79925502d1a6a85938bb1a73b8927e5f31f9cb"
@@ -142,6 +148,13 @@
     "url": "https://deps.files.ghostty.org/translate_c-80f8b6e4f45a303268717d8e5f4f91d7837138bb.tar.gz",
     "dest": "vendor/p/translate_c-0.0.0-Q_BUWmU6BwB_9JKG2l2W7i_mhmYWeRseTGBEHi_YlV5f",
     "sha256": "38c9e59d58f36e3481f6fa38f11fe59c63c12492fccf399ca56f3dfcce17b53e"
+  },
+  {
+    "type": "archive",
+    "url": "https://www.unicode.org/Public/zipped/16.0.0/UCD.zip",
+    "dest": "vendor/p/N-V-__8AALTJcQJ3hosujokSgxYTsa3q1mDZ2dasYhuJwaOV",
+    "sha256": "c86dd81f2b14a43b0cc064aa5f89aa7241386801e35c59c7984e579832634eb2",
+    "strip-components": 0
   },
   {
     "type": "archive",
